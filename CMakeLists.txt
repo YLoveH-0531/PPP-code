@@ -15,6 +15,9 @@ endif()
 add_subdirectory(GUI)  # 作者提供的GUI库
 add_subdirectory(Matrix)  # 作者提供的Matrix库
 
+# let cmake generate compile_commands.json
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 file(GLOB CHAPTERS RELATIVE ${CMAKE_SOURCE_DIR} ch*)
 foreach(c IN ITEMS ${CHAPTERS})
   add_subdirectory(${c})

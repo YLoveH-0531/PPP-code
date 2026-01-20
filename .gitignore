@@ -5,7 +5,8 @@
 *.exe
 
 # CMake
-/cmake-build*/
+build*/
+cmake-build*/
 
 # Visual Studio Code
 /.vscode/
@@ -15,3 +16,9 @@
 
 # Visual Studio
 /.vs/
+
+# Clangd
+.clangd/
+
+# CMake compile commands
+compile_commands.json
